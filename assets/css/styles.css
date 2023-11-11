@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,400;9..40,700&display=swap');
+
+* {
+    font-family: 'DM Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-size: 10px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 15px 0;
+    color: #86A789;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color:#86A789;
+}
+
+p {
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+}
+
+/* Top Navigation CSS */
+#top-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #86A789;
+    align-items: center;
+}
+
+.logo-container {
+    align-self: center;
+}
+
+#logo {
+    width: 100px;
+    margin-left: 10px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navigation a {
+    margin: 0 5px;
+    font-size: 1.25rem;
+}
+
+.navigation a:hover {
+    font-weight: 700;
+}
+
+.icon {
+    display: none;
+}
+/* BODY CSS */
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+#content {
+    width: 75%;
+    padding: 5px;
+}
+
+/* Content */
+
+.card {
+    margin: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+    padding: 25px;
+}
+
+.btn>a {
+    color: #86A789;
+}
+
+.btn {
+    width: 100px;
+    margin: 20px 0;
+    padding: 5px;
+    border: 3px solid #86A789;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #86A789;
+    font-weight: 700;
+}
+
+.btn:hover a {
+    color: white;
+}
+
+
+.skill-list {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin-top: 25px;
+    padding: 25px;
+}
+
+.skill-list li {
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.featured-logos {
+    width: 75px;
+    margin-bottom: 25px;
+}
+
+/* Project */
+.project-content {
+    width: 90%;
+    border: 5px solid #86A789;
+    border-radius: 30px;
+    margin: 10px 0px;
+    padding: 20px
+}
+.project-logo {
+    width: 100%;
+    margin: 10px 0;
+}
+
+
+/* Aside */
+aside {
+    width: 25%;
+    height:fit-content;
+    margin: 0px 50px;
+    padding: 50px 25px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+}
+
+aside h1 {
+    font-size: 25px;
+}
+#profile-photo {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    padding: 50px 0;
+    width: 100%;
+    text-align: center;
+    background-color: #86A789;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 1000px) {
+    main {
+        flex-direction: column;
+    }
+
+    #nav-menu {
+        display: none;
+    }
+    .icon {
+        display: block;
+        padding: 10px;
+        margin-left: 50px;
+    }
+
+    .icon:hover {
+        color: white;
+        background-color: blue;
+    }
+
+    #content {
+      width: 100%;
+      padding: 0;
+    }
+
+    aside {
+        width: 100vw;
+        padding: 10px 0;
+        margin: 50px 0;
+    }
+
+    #profile-photo {
+        width: 50%;
+        margin: 10px 0;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .skill-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        list-style-type: none;
+        margin-top: 15px;
+        padding: 10px;
+    }
+
+    .skill-list li {
+        margin: 20px 0;
+    }
+
+}
+
